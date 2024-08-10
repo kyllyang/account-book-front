@@ -2,7 +2,7 @@
 	import { Label, Select, Datepicker, NumberInput, Input, Checkbox, Button} from 'flowbite-svelte';
 
 	let selected = 'cmb';
-	let countries = [
+	let channels = [
 		{ value: 'cmb', name: '招商银行卡' },
 		{ value: 'citicib', name: '中信银行卡' },
 		{ value: 'icbc', name: '工商银行卡' },
@@ -17,7 +17,7 @@
 	<div class="grid gap-6 mb-6 md:grid-cols-1">
 		<div>
 			<Label for="channel" class="mb-2">渠道</Label>
-			<Select id="channel" items={countries} bind:value={selected} required />
+			<Select id="channel" items={channels} bind:value={selected} required />
 		</div>
 		<div>
 			<Label for="date" class="mb-2">日期</Label>
